@@ -125,11 +125,15 @@
 .featured-works__img {
   width: 360px;
   height: 360px;
-  object-fit: cover; }
+  object-fit: cover;
+  cursor: pointer;
+  transition: opacity 0.5s; }
   @media (max-width: 460px) {
     .featured-works__img {
       width: 220px;
       height: 220px; } }
+  .featured-works__img:hover {
+    opacity: 0.7; }
 
 .team {
   background-color: #f8fafa; }
@@ -350,6 +354,16 @@
         font-size: 16px;
         line-height: 20px;
         padding: 15px 0; } }
+  .member__social {
+    display: flex;
+    gap: 15px; }
+  .member__link-img {
+    width: 20px; }
+    .member__link-img path {
+      fill: #000000;
+      transition: fill 1s; }
+    .member__link-img:hover path {
+      fill: #ffffff; }
 
 .form {
   display: flex;
