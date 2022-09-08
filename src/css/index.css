@@ -407,12 +407,15 @@
   .modal.active {
     transform: translate(-50%, -50%) scale(1); }
   .modal__content {
-    position: relative;
-    width: 80%;
-    max-width: 700px; }
+    max-width: 600px;
+    height: 600px; }
+    @media (max-width: 760px) {
+      .modal__content {
+        max-width: 300px;
+        height: 300px; } }
   .modal__img {
-    height: 600px;
-    width: 600px;
+    height: 100%;
+    width: 100%;
     object-fit: cover; }
 
 #overlay {

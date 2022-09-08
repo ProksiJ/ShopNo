@@ -478,6 +478,7 @@ $mark_color: #b2f2ee;
     transition: 200ms ease-in-out;
     z-index: 10;
     background-color: white;
+
     
     &__btn {
         border: none;
@@ -488,13 +489,16 @@ $mark_color: #b2f2ee;
         transform: translate(-50%, -50%) scale(1);
     }
     &__content {
-        position: relative;
-        width: 80%;
-        max-width: 700px;
+        max-width: 600px;
+        height: 600px;
+        @media (max-width: 760px)  {
+            max-width: 300px;
+            height: 300px;
+        }
     }
     &__img {
-        height: 600px;
-        width: 600px;
+        height: 100%;
+        width: 100%;
         object-fit: cover;
     }
 }
