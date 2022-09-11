@@ -5,6 +5,7 @@ openModalTriggers.forEach(img => {
     img.addEventListener('click', (e) => {
         const modal = document.querySelector(img.dataset.modalTarget)
         const modalImg = document.getElementById('modal-img')
+        
         modalImg.src = e.currentTarget.src
         openModal(modal)
     })
