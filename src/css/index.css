@@ -222,10 +222,6 @@ html {
   object-fit: cover;
   cursor: pointer;
   transition: opacity 0.5s;
-  /*         @media (max-width: 460px) {
-              width: 220px;
-              height: 220px;
-          } */
 }
 .featured-works__img:hover {
   opacity: 0.7;
@@ -339,6 +335,7 @@ html {
   display: flex;
   justify-content: center;
   gap: 10px;
+  cursor: pointer;
 }
 .footer__link {
   width: 40px;
@@ -577,6 +574,7 @@ html {
   box-sizing: border-box;
   border-radius: 2px;
   transition: background-color 1s;
+  cursor: pointer;
 }
 .form__btn:hover {
   background-color: #505050;
