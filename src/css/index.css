@@ -339,6 +339,7 @@ html {
   display: flex;
   justify-content: center;
   gap: 10px;
+  cursor: pointer;
 }
 .footer__link {
   width: 40px;
@@ -577,6 +578,7 @@ html {
   box-sizing: border-box;
   border-radius: 2px;
   transition: background-color 1s;
+  cursor: pointer;
 }
 .form__btn:hover {
   background-color: #505050;

@@ -299,6 +299,7 @@ html {
         display: flex;
         justify-content: center;
         gap: 10px;
+        cursor: pointer;
     }
     &__link {
         width: 40px;
@@ -532,6 +533,7 @@ html {
         box-sizing: border-box;
         border-radius: 2px;
         transition: background-color 1s;
+        cursor: pointer;
         &:hover {
             background-color: $gray;
             color: rgba(255, 255, 255, 0.8);
