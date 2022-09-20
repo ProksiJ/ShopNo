@@ -61,7 +61,7 @@ html {
   padding: 18.75rem 0 12.5rem;
 }
 .header__title {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 3.5rem;
@@ -91,7 +91,7 @@ html {
   }
 }
 .header__content-btn {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.75rem;
@@ -269,7 +269,7 @@ html {
   }
 }
 .contact__info {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -290,7 +290,7 @@ html {
   padding: 5.5rem 0 1rem;
 }
 .footer__title {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   line-height: 1.5rem;
   font-size: 1rem;
@@ -346,7 +346,7 @@ html {
   line-height: 28px;
   text-transform: uppercase;
   font-weight: 700;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   border: 5px solid #000000;
   padding: 3px 8px;
@@ -365,7 +365,7 @@ html {
 }
 
 .title {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3rem;
@@ -387,7 +387,7 @@ html {
   line-height: 1.2rem;
   text-transform: uppercase;
   font-weight: 400;
-  font-family: "Merriweather";
+  font-family: "Merriweather", sans-serif;
   text-align: center;
 }
 @media (max-width: 760px) {
@@ -401,7 +401,7 @@ html {
   text-align: start;
 }
 .text__title {
-  font-family: "Merriweather";
+  font-family: "Merriweather", sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
   line-height: 1.5rem;
@@ -410,7 +410,7 @@ html {
   padding-bottom: 1rem;
 }
 .text__content {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.7rem;
@@ -453,7 +453,7 @@ html {
   }
 }
 .member__name {
-  font-family: "Merriweather";
+  font-family: "Merriweather", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -477,7 +477,7 @@ html {
   }
 }
 .member__quote {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -514,7 +514,7 @@ html {
 }
 .form__input, .form__textarea {
   width: 100%;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 20px;
@@ -533,7 +533,7 @@ html {
   resize: none;
 }
 .form__btn {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 1.75rem;

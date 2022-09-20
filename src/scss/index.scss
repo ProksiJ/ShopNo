@@ -16,7 +16,7 @@ html {
 }
 
 @mixin btn {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.75rem;
@@ -65,7 +65,7 @@ html {
         padding: 18.75rem 0 12.5rem;
     }
     &__title {
-        font-family: "Montserrat";
+        font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: 2.8rem;
         line-height: 3.5rem;
@@ -240,7 +240,7 @@ html {
         }
     }
     &__info {
-        font-family: "Raleway";
+        font-family: "Raleway", sans-serif;
         font-weight: 400;
         font-size: 1rem;
         line-height: 1.5rem;
@@ -261,7 +261,7 @@ html {
         padding: 5.5rem 0 1rem;
     }
     &__title {
-        font-family: "Raleway";
+        font-family: "Raleway", sans-serif;
         font-weight: 400;
         line-height: 1.5rem;
         font-size: 1rem;
@@ -319,7 +319,7 @@ html {
     line-height: 28px;
     text-transform: uppercase;
     font-weight: 700;
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     border: 5px solid $black;
     padding: 3px 8px;
@@ -340,7 +340,7 @@ html {
 }
 
 .title {
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 3rem;
@@ -360,7 +360,7 @@ html {
     line-height: 1.2rem;
     text-transform: uppercase;
     font-weight: 400;
-    font-family: "Merriweather";
+    font-family: "Merriweather", sans-serif;
     text-align: center;
     @media (max-width: 760px) {
         font-size: 0.8rem;
@@ -371,7 +371,7 @@ html {
 .text {
     text-align: start;
     &__title {
-        font-family: "Merriweather";
+        font-family: "Merriweather", sans-serif;
         font-weight: 700;
         font-size: 1.1rem;
         line-height: 1.5rem;
@@ -380,7 +380,7 @@ html {
         padding-bottom: 1rem;
     }
     &__content {
-        font-family: "Raleway";
+        font-family: "Raleway", sans-serif;
         font-weight: 400;
         font-size: 1rem;
         line-height: 1.7rem;
@@ -423,7 +423,7 @@ html {
         }
     }
     &__name {
-        font-family: "Merriweather";
+        font-family: "Merriweather", sans-serif;
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
@@ -445,7 +445,7 @@ html {
         }
     }
     &__quote {
-        font-family: "Raleway";
+        font-family: "Raleway", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
@@ -482,7 +482,7 @@ html {
     gap: 10px;
     &__input {
         width: 100%;
-        font-family: "Raleway";
+        font-family: "Raleway", sans-serif;
         font-weight: 400;
         font-size: 15px;
         line-height: 20px;
