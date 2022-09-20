@@ -1,5 +1,11 @@
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 .wrapper {
@@ -10,7 +16,6 @@ html {
 }
 
 .container {
-  /* padding: 0 150px;  */
   width: 1140px;
   margin: 0 auto;
 }
@@ -41,12 +46,11 @@ html {
 }
 
 .header {
-  flex: 1 0 100%;
   background-color: #eff0f2;
 }
 .header__top {
   position: absolute;
-  padding-top: 60px;
+  padding-top: 4rem;
 }
 .header__content {
   display: flex;
@@ -54,33 +58,21 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 300px 0 200px;
-}
-@media (max-width: 760px) {
-  .header__content {
-    padding: 200px 0 100px;
-  }
-}
-@media (max-width: 375px) {
-  .header__content {
-    padding: 150px 0 100px;
-    gap: 10px;
-  }
+  padding: 18.75rem 0 12.5rem;
 }
 .header__title {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 45px;
-  line-height: 50px;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: #505050;
-  width: 100%;
   filter: drop-shadow(3.517px 8.285px 5px rgba(0, 0, 0, 0.24));
 }
 @media (max-width: 768px) {
   .header__title {
-    font-size: 30px;
+    font-size: 2rem;
     line-height: 35px;
     padding: 0, 50px;
   }
@@ -88,25 +80,25 @@ html {
 .header__mark {
   background-color: #b2f2ee;
   color: #505050;
-  padding: 0 15px;
+  padding: 0 1rem;
 }
 .header__btn-container {
-  padding-top: 140px;
+  padding-top: 10rem;
 }
 @media (max-width: 760px) {
   .header__btn-container {
-    padding-top: 70px;
+    padding-top: 5rem;
   }
 }
 .header__content-btn {
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #505050;
-  padding: 15px 50px;
+  padding: 0.7rem 2.5rem;
   border: 2px solid #505050;
   transition: background-color 1s;
 }
@@ -116,25 +108,19 @@ html {
 }
 @media (max-width: 760px) {
   .header__content-btn {
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
   }
 }
 .header__content-img {
   position: absolute;
-  bottom: 120px;
-  right: 220px;
+  top: 36rem;
+  right: 15rem;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .header__content-img {
-    bottom: 100px;
-    right: 100px;
-  }
-}
-@media (max-width: 768px) {
-  .header__content-img {
-    bottom: 120px;
-    right: 100px;
+    top: 36rem;
+    right: 5rem;
   }
 }
 @media (max-width: 375px) {
@@ -147,29 +133,23 @@ html {
   background-color: #f8fafa;
 }
 .about__head {
-  padding-top: 130px;
+  padding-top: 8rem;
 }
 @media (max-width: 375px) {
   .about__head {
-    padding-top: 50px;
+    padding-top: 3rem;
   }
 }
 .about__content {
   display: flex;
-  gap: 150px;
-  padding: 150px 50px;
+  justify-content: center;
+  gap: 8rem;
+  padding: 8rem 0;
 }
 @media (max-width: 1280px) {
   .about__content {
-    gap: 50px;
-    padding: 100px 0;
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 375px) {
-  .about__content {
-    gap: 50px;
-    padding: 50px 0;
+    gap: 2rem;
+    padding: 5rem 0;
     flex-wrap: wrap;
   }
 }
@@ -187,33 +167,28 @@ html {
 }
 
 .featured-works__head {
-  padding-top: 130px;
+  padding-top: 10rem;
 }
 @media (max-width: 760px) {
   .featured-works__head {
-    padding-top: 100px;
+    padding-top: 6rem;
   }
 }
 @media (max-width: 375px) {
   .featured-works__head {
-    padding-top: 50px;
+    padding-top: 3rem;
   }
 }
 .featured-works__content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 130px 0;
+  gap: 0.8rem;
+  padding: 8rem 0;
 }
 @media (max-width: 760px) {
   .featured-works__content {
-    padding: 50px 0;
-  }
-}
-@media (max-width: 375px) {
-  .featured-works__content {
-    padding: 50px 0;
+    padding: 3rem 0;
   }
 }
 .featured-works__img {
@@ -222,10 +197,6 @@ html {
   object-fit: cover;
   cursor: pointer;
   transition: opacity 0.5s;
-  /*         @media (max-width: 460px) {
-              width: 220px;
-              height: 220px;
-          } */
 }
 .featured-works__img:hover {
   opacity: 0.7;
@@ -235,23 +206,23 @@ html {
   background-color: #f8fafa;
 }
 .team__head {
-  padding-top: 100px;
+  padding-top: 6rem;
 }
 @media (max-width: 760px) {
   .team__head {
-    padding-top: 50px;
+    padding-top: 3rem;
   }
 }
 .team__content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 120px 0 190px;
+  gap: 0.8rem;
+  padding: 7.5rem 0 12rem;
 }
 @media (max-width: 375px) {
   .team__content {
-    padding: 50px 0;
+    padding: 3rem 0;
   }
 }
 
@@ -265,7 +236,7 @@ html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../assets/christmas_snow_trees-wide.jpg");
+  background-image: url("../assets/bg_contact_section.jpg");
   background-size: cover;
   filter: opacity(40%);
 }
@@ -273,8 +244,8 @@ html {
   position: relative;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
-  padding: 120px 0;
+  gap: 1.8rem;
+  padding: 7.5rem 0;
   flex-wrap: wrap;
 }
 @media (max-width: 375px) {
@@ -300,8 +271,8 @@ html {
 .contact__info {
   font-family: "Raleway";
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: rgba(255, 255, 255, 0.6);
 }
 .contact__link {
@@ -316,23 +287,23 @@ html {
   background-color: #262b2e;
 }
 .footer__head {
-  padding: 90px 0 15px;
+  padding: 5.5rem 0 1rem;
 }
 .footer__title {
   font-family: "Raleway";
   font-weight: 400;
-  line-height: 24px;
-  font-size: 15px;
+  line-height: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
   color: #dad8d8;
   text-align: center;
 }
 .footer__content {
-  padding: 0 0 150px;
+  padding: 0 0 9.5rem;
 }
 @media (max-width: 760px) {
   .footer__content {
-    padding: 0 0 90px;
+    padding: 0 0 5.5rem;
   }
 }
 .footer__links {
@@ -368,7 +339,6 @@ html {
   fill: #bbb8b9;
 }
 
-/*# sourceMappingURL=index.css.map */
 /* BLOKS */
 .logo {
   font-size: 17px;
@@ -397,34 +367,26 @@ html {
 .title {
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 38px;
-  line-height: 38px;
+  font-size: 2.5rem;
+  line-height: 3rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  padding-bottom: 0.5rem;
   text-align: center;
-}
-@media (max-width: 760px) {
-  .title {
-    font-size: 28px;
-    line-height: 38px;
-  }
 }
 
 .subtitle {
-  font-size: 17px;
+  font-size: 1rem;
   letter-spacing: 1px;
-  line-height: 28px;
+  line-height: 1.2rem;
   text-transform: uppercase;
   font-weight: 400;
   font-family: "Merriweather";
   text-align: center;
-}
-@media (max-width: 760px) {
-  .subtitle {
-    font-size: 14px;
-    line-height: 18px;
-  }
+  /*     @media (max-width: 760px) {
+          font-size: 14px;
+          line-height: 18px;
+      } */
 }
 
 .text {
@@ -433,18 +395,19 @@ html {
 .text__title {
   font-family: "Merriweather";
   font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.1rem;
+  line-height: 2rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  padding-bottom: 1rem;
 }
 .text__content {
   font-family: "Raleway";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
+  font-size: 1rem;
+  line-height: 2rem;
   letter-spacing: 1px;
-  padding-bottom: 40px;
+  padding-bottom: 2rem;
 }
 
 .member {
@@ -564,8 +527,8 @@ html {
 .form__btn {
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 700;
@@ -597,7 +560,6 @@ html {
   position: fixed;
   top: 50%;
   left: 50%;
-  /* width: 80%; */
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
   z-index: 10;
@@ -608,7 +570,7 @@ html {
   background: none;
   cursor: pointer;
 }
-.modal.active {
+.modal_active {
   transform: translate(-50%, -50%) scale(1);
 }
 .modal__content {
@@ -627,7 +589,7 @@ html {
   object-fit: cover;
 }
 
-#overlay {
+.overlay {
   position: fixed;
   opacity: 0;
   top: 0;
@@ -638,7 +600,7 @@ html {
   pointer-events: none;
   transition: 200ms ease-in-out;
 }
-#overlay.active {
+.overlay_active {
   opacity: 1;
   pointer-events: all;
 }

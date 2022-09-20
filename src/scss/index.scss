@@ -4,17 +4,22 @@ $white: #ffffff;
 $background_first_page: #eff0f2;
 $background_section: #f8fafa;
 $gray: #505050;
-$mark_color: #b2f2ee;
+$bg_mark_color: #b2f2ee;
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
+    @media (max-width: 576px) {
+        font-size: 14px;
+    }
+
 }
 
 @mixin btn {
     font-family: "Montserrat";
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -26,7 +31,6 @@ html {
     width: 100%;
 }
 .container {
-    /* padding: 0 150px;  */
     width: 1140px;
     margin: 0 auto;
     @media (max-width: 1200px) {
@@ -47,11 +51,10 @@ html {
 }
 
 .header {
-    flex: 1 0 100%;
     background-color: $background_first_page;
     &__top {
         position: absolute;
-        padding-top: 60px;
+        padding-top: 4rem;
     }
     &__content {
         display: flex;
@@ -59,46 +62,38 @@ html {
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding: 300px 0 200px;
-        @media (max-width: 760px) {
-            padding: 200px 0 100px;
-        }
-        @media (max-width: 375px) {
-            padding: 150px 0 100px;
-            gap: 10px;
-        }
+        padding: 18.75rem 0 12.5rem;
     }
     &__title {
         font-family: "Montserrat";
         font-weight: 700;
-        font-size: 45px;
-        line-height: 50px;
+        font-size: 2.8rem;
+        line-height: 3.5rem;
         letter-spacing: 3px;
         text-transform: uppercase;
         color: $gray;
-        width: 100%;
         filter: drop-shadow(3.517px 8.285px 5px rgba(0, 0, 0, 0.24));
         @media (max-width: 768px) {
-            font-size: 30px;
+            font-size: 2rem;
             line-height: 35px;
             padding: 0, 50px;
         }
     }
     &__mark {
-        background-color: $mark_color;
+        background-color: $bg_mark_color;
         color: $gray;
-        padding: 0 15px;
+        padding: 0 1rem;
     }
     &__btn-container {
-        padding-top: 140px;
+        padding-top: 10rem;
         @media (max-width: 760px) {
-            padding-top: 70px;
+            padding-top: 5rem;
         }
     }
     &__content-btn {
         @include btn;
         color: $gray;
-        padding: 15px 50px;
+        padding: 0.7rem 2.5rem;
         border: 2px solid $gray;
         transition: background-color 1s;
         &:hover {
@@ -106,48 +101,40 @@ html {
             color: $white;
         }
         @media (max-width: 760px) {
-            font-size: 14px;
-            line-height: 28px;
+            font-size: 0.9rem;
+            line-height: 1.5rem;
         }
     }
     &__content-img {
         position: absolute;
-        bottom: 120px;
-        right: 220px;
-        @media (max-width: 992px) {
-            bottom: 100px;
-            right: 100px;
-        }
-        @media (max-width: 768px) {
-            bottom: 120px;
-            right: 100px;
+        top: 36rem;
+        right: 15rem;
+        @media (max-width: 1200px) {
+            top: 36rem;
+            right: 5rem;
         }
         @media (max-width: 375px) {
             display: none;
-        }
+        } 
     }
 }
 
 .about {
     background-color: $background_section;
     &__head {
-        padding-top: 130px;
+        padding-top: 8rem;
         @media (max-width: 375px) {
-            padding-top: 50px;
+            padding-top: 3rem;
         }
     }
     &__content {
         display: flex;
-        gap: 150px;
-        padding: 150px 50px;
+        justify-content: center;
+        gap: 8rem;
+        padding: 8rem 0;
         @media (max-width: 1280px) {
-            gap: 50px;
-            padding: 100px 0;
-            flex-wrap: wrap;
-        }
-        @media (max-width: 375px) {
-            gap: 50px;
-            padding: 50px 0;
+            gap: 2rem;
+            padding: 5rem 0;
             flex-wrap: wrap;
         }
     }
@@ -165,25 +152,22 @@ html {
 
 .featured-works {
     &__head {
-        padding-top: 130px;
+        padding-top: 10rem;
         @media (max-width: 760px) {
-            padding-top: 100px;
+            padding-top: 6rem;
         }
         @media (max-width: 375px) {
-            padding-top: 50px;
+            padding-top: 3rem;
         }
     }
     &__content {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 10px;
-        padding: 130px 0;
+        gap: 0.8rem;
+        padding: 8rem 0;
         @media (max-width: 760px) {
-            padding: 50px 0;
-        }
-        @media (max-width: 375px) {
-            padding: 50px 0;
+            padding: 3rem 0;
         }
     }
     &__img {
@@ -192,10 +176,6 @@ html {
         object-fit: cover;
         cursor: pointer;
         transition: opacity 0.5s;
-/*         @media (max-width: 460px) {
-            width: 220px;
-            height: 220px;
-        } */
         &:hover {
             opacity: 0.7;
         }
@@ -205,19 +185,19 @@ html {
 .team {
     background-color: $background_section;
     &__head {
-        padding-top: 100px;
+        padding-top: 6rem;
         @media (max-width: 760px) {
-            padding-top: 50px;
+            padding-top: 3rem;
         }
     }
     &__content {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 10px;
-        padding: 120px 0 190px;
+        gap: 0.8rem;
+        padding: 7.5rem 0 12rem;
         @media (max-width: 375px) {
-            padding: 50px 0;
+            padding: 3rem 0;
         }
     }
 }
@@ -231,7 +211,7 @@ html {
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: url("../assets/christmas_snow_trees-wide.jpg");
+        background-image: url("../assets/bg_contact_section.jpg");
         background-size: cover;
         filter: opacity(40%);
     }
@@ -239,8 +219,8 @@ html {
         position: relative;
         display: flex;
         justify-content: space-between;
-        gap: 30px;
-        padding: 120px 0;
+        gap: 1.8rem;
+        padding: 7.5rem 0;
         flex-wrap: wrap;
         @media (max-width: 375px) {
             padding: 50px 0;
@@ -262,8 +242,8 @@ html {
     &__info {
         font-family: "Raleway";
         font-weight: 400;
-        font-size: 15px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         color: rgba(255, 255, 255, 0.6);
     }
     &__link {
@@ -278,21 +258,21 @@ html {
 .footer {
     background-color: #262b2e;
     &__head {
-        padding: 90px 0 15px;
+        padding: 5.5rem 0 1rem;
     }
     &__title {
         font-family: "Raleway";
         font-weight: 400;
-        line-height: 24px;
-        font-size: 15px;
+        line-height: 1.5rem;
+        font-size: 1rem;
         text-transform: uppercase;
         color: #dad8d8;
         text-align: center;
     }
     &__content {
-        padding: 0 0 150px;
+        padding: 0 0 9.5rem;
         @media (max-width: 760px) {
-            padding: 0 0 90px;
+            padding: 0 0 5.5rem;
         }
     }
     &__links {
@@ -330,7 +310,6 @@ html {
         }
     }
 }
-/*# sourceMappingURL=index.css.map */
 
 /* BLOKS */
 
@@ -363,30 +342,26 @@ html {
 .title {
     font-family: "Montserrat";
     font-weight: 700;
-    font-size: 38px;
-    line-height: 38px;
+    font-size: 2.5rem;
+    line-height: 3rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    padding-bottom: 0.5rem;
     text-align: center;
-    @media (max-width: 760px) {
-        font-size: 28px;
-        line-height: 38px;
-    }
 }
 
 .subtitle {
-    font-size: 17px;
+    font-size: 1rem;
     letter-spacing: 1px;
-    line-height: 28px;
+    line-height: 1.2rem;
     text-transform: uppercase;
     font-weight: 400;
     font-family: "Merriweather";
     text-align: center;
-    @media (max-width: 760px) {
+/*     @media (max-width: 760px) {
         font-size: 14px;
         line-height: 18px;
-    }
+    } */
 }
 
 .text {
@@ -394,18 +369,19 @@ html {
     &__title {
         font-family: "Merriweather";
         font-weight: 700;
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 1.1rem;
+        line-height: 2rem;
         letter-spacing: 1px;
         text-transform: uppercase;
+        padding-bottom: 1rem;
     }
     &__content {
         font-family: "Raleway";
         font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
+        font-size: 1rem;
+        line-height: 2rem;
         letter-spacing: 1px;
-        padding-bottom: 40px;
+        padding-bottom: 2rem;
     }
 }
 
@@ -551,7 +527,6 @@ html {
     position: fixed;
     top: 50%;
     left: 50%;
-    /* width: 80%; */
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out;
     z-index: 10;
@@ -562,7 +537,7 @@ html {
         background: none;
         cursor: pointer;
     }
-    &.active {
+    &_active {
         transform: translate(-50%, -50%) scale(1);
     }
     &__content {
@@ -579,7 +554,8 @@ html {
         object-fit: cover;
     }
 }
-#overlay {
+
+.overlay {
     position: fixed;
     opacity: 0;
     top: 0;
@@ -589,7 +565,7 @@ html {
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
     transition: 200ms ease-in-out;
-    &.active {
+    &_active {
         opacity: 1;
         pointer-events: all;
     }
