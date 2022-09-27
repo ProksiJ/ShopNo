@@ -8,11 +8,10 @@ $bg_mark_color: #b2f2ee;
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 1rem;
     @media (max-width: 576px) {
-        font-size: 14px;
+        font-size: 0.8rem;
     }
-
 }
 
 @mixin btn {
@@ -24,7 +23,7 @@ html {
     text-transform: uppercase;
 }
 
-.wrapper {
+.body-container {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -37,7 +36,7 @@ html {
         width: 900px;
     }
     @media (max-width: 992px) {
-         width: 792px;
+        width: 792px;
     }
     @media (max-width: 768px) {
         width: 576px;
@@ -63,26 +62,6 @@ html {
         align-items: center;
         text-align: center;
         padding: 18.75rem 0 12.5rem;
-    }
-    &__title {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        font-size: 2.8rem;
-        line-height: 3.5rem;
-        letter-spacing: 3px;
-        text-transform: uppercase;
-        color: $gray;
-        filter: drop-shadow(3.517px 8.285px 5px rgba(0, 0, 0, 0.24));
-        @media (max-width: 768px) {
-            font-size: 2rem;
-            line-height: 35px;
-            padding: 0, 50px;
-        }
-    }
-    &__mark {
-        background-color: $bg_mark_color;
-        color: $gray;
-        padding: 0 1rem;
     }
     &__btn-container {
         padding-top: 10rem;
@@ -113,9 +92,9 @@ html {
             top: 36rem;
             right: 5rem;
         }
-        @media (max-width: 375px) {
+        @media (max-width: 576px) {
             display: none;
-        } 
+        }
     }
 }
 
@@ -140,9 +119,9 @@ html {
     }
     &__img {
         width: 390px;
-        height: 480px;
+        height: 480px; 
         object-fit: cover;
-        filter: drop-shadow(0 0 15px rgba(20, 20, 21, 0.13));
+        box-shadow: (0 0 15px rgba(20, 20, 21, 0.13));
         @media (max-width: 1280px) {
             width: 100%;
             object-fit: cover;
@@ -213,7 +192,7 @@ html {
         height: 100%;
         background-image: url("../assets/bg_contact_section.jpg");
         background-size: cover;
-        filter: opacity(40%);
+        opacity: .4;
     }
     &__content {
         position: relative;
@@ -324,7 +303,7 @@ html {
     border: 5px solid $black;
     padding: 3px 8px;
     width: fit-content;
-    filter: drop-shadow(0 0 1px rgba(21, 21, 22, 0.75));
+    text-shadow: (0 0 1px rgba(21, 21, 22, 0.75));
     &__link {
         &:active {
             color: $black;
@@ -336,6 +315,27 @@ html {
     span {
         font-size: 20px;
         color: $blue;
+    }
+}
+
+.main-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $gray;
+    text-shadow: (3.517px 8.285px 5px rgba(0, 0, 0, 0.24));
+    @media (max-width: 768px) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 0, 50px;
+    }
+    &__mark {
+        background-color: $bg_mark_color;
+        color: $gray;
+        padding: 0 1rem;
     }
 }
 
@@ -425,44 +425,42 @@ html {
     &__name {
         font-family: "Merriweather", sans-serif;
         font-weight: 700;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
         letter-spacing: 1px;
         color: $black;
         span {
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 400;
             font-style: italic;
             color: #767776;
         }
         @media (max-width: 460px) {
-            font-size: 16px;
-            line-height: 20px;
+            font-size: 1rem;
+            line-height: 1.1rem;
             span {
-                font-size: 12px;
-                line-height: 12px;
+                font-size: 0.75rem;
+                line-height: 0.9rem;
             }
         }
     }
     &__quote {
         font-family: "Raleway", sans-serif;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 1rem;
+        line-height: 1.5rem;
         padding: 30px 0;
         color: #2d635e;
         @media (max-width: 460px) {
-            font-size: 16px;
-            line-height: 20px;
-            padding: 15px 0;
+            padding: 1rem 0;
         }
     }
     &__social {
         display: flex;
-        gap: 15px;
+        gap: 1rem;
     }
     &__link-img {
-        width: 15px;
+        width: 1rem;
         cursor: pointer;
         path {
             fill: #2d635e;
@@ -484,12 +482,12 @@ html {
         width: 100%;
         font-family: "Raleway", sans-serif;
         font-weight: 400;
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 1rem;
+        line-height: 1.2rem;
         background-color: transparent;
         border: none;
         color: rgba(255, 255, 255, 0.8);
-        padding: 15px 5px;
+        padding: 1rem 5px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         &::placeholder {
             color: rgba(255, 255, 255, 0.5);
@@ -497,8 +495,7 @@ html {
     }
     &__textarea {
         @extend .form__input;
-        height: 130px;
-        line-height: 18px;
+        height: 8rem;
         resize: none;
     }
     &__btn {
@@ -507,22 +504,23 @@ html {
         color: #2d635e;
         background-color: $blue;
         border: 1px solid $blue;
-        padding: 11px 35px;
+        padding: 10px 35px;
         width: fit-content;
         margin-top: 25px;
         box-sizing: border-box;
         border-radius: 2px;
         transition: background-color 1s;
         cursor: pointer;
+        @media (max-width: 375px) {
+            font-size: 1rem;
+            line-height: 1.2rem;
+            padding: 10px 20px;
+            margin: 1rem auto;
+        }
         &:hover {
             background-color: $gray;
             color: rgba(255, 255, 255, 0.8);
             border: 1px solid rgba(255, 255, 255, 0.5);
-        }
-        @media (max-width: 320px) {
-            font-size: 16px;
-            line-height: 20px;
-            padding: 10px 20px;
         }
     }
 }

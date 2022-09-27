@@ -1,3 +1,4 @@
+"use strict"
 const modalTriggers = document.querySelectorAll('[data-modal-target]')
 const overlay = document.getElementById('overlay')
 const modalImg = document.getElementById('modal-img')
@@ -20,15 +21,17 @@ overlay.addEventListener('click', () => {
 })
 
 function openModal(modal) {
-    if (!modal) return
-    modal.classList.add('modal_active')
-    overlay.classList.add('overlay_active')
+    if (modal) {
+        modal.classList.add('modal_active')
+        overlay.classList.add('overlay_active')  
+    }  
 }
 
 function closeModal(modal) {
-    if (!modal) return
-    modal.classList.remove('modal_active')
-    overlay.classList.remove('overlay_active')
+    if (modal) {
+        modal.classList.remove('modal_active')
+        overlay.classList.remove('overlay_active')
+    }  
 }
 
 form.addEventListener('submit', (event) => {
