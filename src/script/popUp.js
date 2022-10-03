@@ -3,21 +3,20 @@ const modalTriggers = document.querySelectorAll('[data-modal-target]')
 const overlay = document.getElementById('overlay')
 const modalImg = document.getElementById('modal-img')
 const form = document.getElementById('contact-form')
+const imgs = document.getElementById('featured-works__content')
 
-modalTriggers.forEach(img => {
-    img.addEventListener('click', (e) => {
-        const modal = document.querySelector(img.dataset.modalTarget)
-        modalImg.src = e.currentTarget.src
-        openModal(modal)
-    })
+imgs.addEventListener('click', (e) => {
+    modalImg.src = ''
+    modalImg.src = e.target.src
+    openModal(modal)
 })
 
 overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal.modal_active')
     modals.forEach(modal => {
         closeModal(modal)
-        modalImg.src = ''
-    })
+       
+    }) 
 })
 
 function openModal(modal) {
